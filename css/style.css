@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+
+}
+
+
+/* ########################### header style ########################### */
+.head{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5)), url("../img/cory-bjork-4od6B8Hqo7k-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-bar{
+    
+    padding-top: 1em;
+    
+    
+}
+.nav-bar .nav-items .nav-item a{
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+}
+.nav-bar .logo{
+    float: left;
+    color: white;
+    
+}
+.nav-bar .nav-items{
+    float: right;
+    list-style: none;
+}
+.nav-bar::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.nav-bar .nav-item{
+    display: inline-block;
+    margin: 1em;
+    text-transform: uppercase;
+}
+.nav-bar a{
+    padding-bottom: 0.3rem;
+}
+.nav-bar a:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+.header-content{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 0.5em;
+}
+.header-content p{
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+}
+
+/* ######################## utility classes ######################### */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+.lghead{
+    font-size: 3.5rem;
+}
+.lg-heading{
+    font-size: 3rem;
+}
+.midhead{
+    font-size: 2rem;
+}
+.text-red{
+    color: red;
+}
+.text-black{
+    color: black;
+}
+.text-white{
+    color: #ffe6e6;
+}
+.text-grey{
+    color: rgb(75, 75, 75);
+}
+.text-notblack{
+    color: #1e1e2f;
+}
+.bg-darker{
+    background-color: #1d1d27ea;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    margin: 0.5em o;
+    font-weight: 500;
+}
+.btn-first{
+    background-color: #ffe6e6;
+    border-radius: 10em;
+}
+.btn-first:hover{
+    background-color: ghostwhite;
+}
+.btn-second{
+    background-color: palevioletred;
+    border-radius: 10em;
+}
+.btn-second:hover{
+    background-color: lightcoral;
+}
+
+/* ############################ style ############## */
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-size: 1.6rem;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* ############################# main style ###################### */
+
+.main{
+    background: #ffe6e6;
+    padding: 10rem 0;
+}
+.row{
+    height: 360px;
+    box-shadow: 0px 0px 20px 0px lightgray;
+    background: white;
+}
+.row-1{
+    margin-bottom: 10rem;
+}
+.row-1 .img , .row-2 .text{
+    float: left;
+    width: 50%;
+}
+.row-2 .img , .row-1 .text{
+    float: right;
+    width: 50%;
+}
+.row-1 .img{
+  
+    height: 100%;
+
+}
+.row-1 .text{
+   
+    padding: 3rem;
+}
+.row-2 .img{
+ 
+    height: 100%;
+
+}
+.row-2 .text{
+    
+    padding: 3rem;
+}
+/* .row .text h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 0.5em;
+} */
+.row .img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row::after{
+    display: block;
+    content: "";
+    clear: both; 
+}
+/* ###################################################### feature styleing ###################### */
+.feature{
+   padding: 10em 0; 
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px #363638af;
+}
+.box{
+     width: 33.3333333%;
+     float: left;
+     color:white  ;
+     padding: 2em;
+     text-align: center;
+}
+.box1, .box3{
+    /* background-color: #1e1e2f; */
+    background-image: linear-gradient(to right top, #02051e, #03182b, #002537, #003242, #00404a 50%);
+} 
+.box2{
+    background-image: linear-gradient(to right top, #800404, #940b06, #a81305, #bc1b03, #d12400 50%);
+}
+.box-wrapper::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* ############################## foot styleing################ */
+.footers{
+    background-color: #232329;
+}
+.foot{
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
+}
+.icon{
+    padding: 1em 1em 0.5em 0em;
+}
+
+/* ######################## about us styling ######################  */
+.about{
+    padding: 5rem 0rem;
+}
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid rgb(255,62,50);
+    width: 100%;
+}
+
+/* ########################### about wrapper stying ##################  */
+.about-wrapper{
+    text-align: center;
+}
+.about-wrapper .left{
+    width: 50%;
+    float: left;
+}
+.about-wrapper .right{
+    width: 50%;
+    float: right;
+}
+.about-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wrapper ul{
+    list-style: none;
+    margin-top: 2rem;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: tomato;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+/* ###################################### styling count ############################# */
+.counts{
+    text-align: center;
+}
+.count-item1{
+    width: 25%;
+    float: left;
+}
+.count-item2{
+    width: 25%;
+    float: left;
+}
+.count-item3{
+    width: 25%;
+    float: left;
+}
+.count-item4{
+    width: 25%;
+    float: left;
+}
+.count-item{
+    margin-top: 2rem;
+}   
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item span{
+    color: #fd2b1d;
+    font-size: 3rem;
+    font-weight: 600;
+  
+}
+.count-item p{
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgb(75, 75, 75);
+}
+/* ############################ cta banner stying ########################### */
+.cta-banner{
+    /* text-align: center; */
+    background: rgb(255,62,50);
+    background: linear-gradient(47deg, rgba(255,62,50,1) 43%, rgba(226,40,99,1) 100%);
+    color: #ffe6e6;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
+    margin-top: 2rem;
+}
+.cta-left{
+    width: 60%;
+    float: left;
+}
+.cta-right{
+    width: 40%;
+    float: right;
+}
+.cta-banner::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.cta-banner .cta-line{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1.4rem;
+}
+.cta-banner .btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:#ffe6e6;
+    border: 3px solid #ffe6e6;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.3rem;
+    border-radius: 0.8rem;
+}
+.btn-cta:hover{
+    border: 4px solid #F97878;
+    color: #f15b4d;
+}
+/* ################################ contact styling ################################## */
+.contact-form{
+    padding: 5rem 0;
+    background: #ffe6e6;
+}
+
+.form-wrapper .company-address{
+    height: 800px;
+    background: #fdf7f7;
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper.company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.company-address img{
+    display: inline-block;
+    max-width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+}
+
+
+
+/* ########################################## form styling ########################################## */
+
+.form-wrapper .form{
+    height: 800px;
+    background: #fdf7f7;
+    width: 49%;
+    float: right;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+.form-wrapper::after{
+    display: block;
+    content: '';
+    clear: both;    
+}
+.text-rad{
+    color: #f15b4d;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 3px solid #f15b4d;
+    width: 100%;
+}
+.form-wrapper label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+.form-wrapper .form label::after{
+    content: '*';
+    color: #f15b4d;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #f12d3af5;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+
+}
+
+/* ################################ media quiries ##################################### */
+@media (max-width: 500px){
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 50%;
+    }
+    .nav-bar .nav-items, .nav-bar .logo{
+        float: none;
+        text-align: center;
+        display: block;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img,
+    .row .text{
+        float: none;
+        width: 100%;
+        text-align: center;
+       }
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #363638af;
+    }
+    .feature .box2,
+    .feature .box3{
+        margin-top: 4em;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .cta-left,
+    .cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper.company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+@media (min-width: 501px) and (max-width: 870px){
+    p{
+         font-size: 1.8rem;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 50%;
+    }
+    .nav-bar .nav-items, .nav-bar .logo{
+        float: none;
+        text-align: center;
+        display: block;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img,
+    .row .text{
+        float: none;
+        width: 100%;
+        text-align: center;
+       }
+    .feature .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px #363638af;
+    }
+    .feature .box2,
+    .feature .box3{
+        margin-top: 4em;
+    }
+    .box-wrapper{
+        box-shadow: none;
+    }
+    .cta-left,
+    .cta-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .form-wrapper.company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (orientation: landscape) and (max-height: 500px){
+    .head{
+        height: 90vmax;
+    }
+}
